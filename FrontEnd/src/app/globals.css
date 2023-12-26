@@ -1,0 +1,434 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+}
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: #001F3F;
+}
+.containerOfAHeader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #001F3F;
+}
+.pseudo-header{
+    height: 10vh; /* Takes up 20% of the viewport height */
+    width: 95%;
+    border-bottom: 1px solid #FA5A50;
+    display: flex;
+    justify-content: flex-end;
+}
+.signUp-logIn{
+    color: #FA5A50;
+    margin-top: 5vh;
+    margin-right: 5vh;
+    padding-bottom: 1.5vh;
+    border-bottom: 1px solid #FA5A50;
+    cursor: default;
+}
+.middleRow{
+    display: flex;
+    height: 50vh;
+}
+.left,.right {
+    flex: 1; /* Each div takes up an equal part */
+    height: 100px; /* Set the height as needed */
+}
+.aboutText{
+    margin:8%;
+    margin-top: 15%;
+    margin-left: 25%;
+    font-size:49px;
+    color: #FA5A50;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.oqigaText{
+    margin:8%;
+    margin-left: 40%;
+    font-size:49px;
+    color: #FA5A50;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+}
+.logoImage{
+    margin-left: 30%;
+}
+.footer {
+    height: 10%;
+    background-color: #001830;
+}
+.paragraph{
+    letter-spacing: 2px;
+    margin-left: 20%;
+    color: #FA5A50;
+    font-weight: bold;
+    line-height: 2;
+    cursor: default;
+}
+.headerWrapper{
+    background-color:#001F3F;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    height: 10vh; /* Takes up 20% of the viewport height */
+    width: 95%;
+    border-bottom: 1px solid #FA5A50;
+    background-color: #001F3F;
+    display: flex;
+    margin-bottom: 3vh;
+    align-items: center;
+}
+.dzindzin{
+    margin-top: 2.5%;
+    margin-left: 3%;
+    margin-bottom: 1%;
+}
+.headerText{
+    margin-top: 2.5%;
+    margin-left: 5%;
+    color: #FA5A50;
+    border-bottom: 1px solid #FA5A50;
+    font-weight: bold;
+    display: flex;
+    cursor: default;
+    letter-spacing: 2px;
+}
+.namePhotoContainer{
+    margin: 4%;
+    margin-top: 5%;
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 20%;
+    align-items: center;
+    flex: 1;   
+}
+.namePhotoContainer h2{
+    border-bottom: 1px solid #FA5A50;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.eventsContainer{
+    background-color: #CCCCCC;
+    height: 90%;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+}
+.filterWrapper{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.filter{
+    width:80%;
+    height:90%;
+    border-radius: 15px;
+    display: flex;
+    background-color: #001F3F;
+    justify-content: center;
+}
+.filter h2{
+    color: #FA5A50;
+    border-bottom: 1px solid #FA5A50;
+    height: 5%;
+    cursor: default;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.events{
+    flex: 1;
+    height: 100%;
+}
+.searchBarWrapper{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 20%;
+}
+.searchBar{
+    width: 30%; /* Adjust width as needed */
+    padding: 1%;
+    border: 6px solid #001F3F;
+    border-radius: 10px;
+    position: absolute;
+    right: 0;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-right: 4%;
+}
+.eventsWrapper{
+    display:flex;
+    overflow: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin: 3%;
+    height: 70%;
+    flex-wrap: wrap;
+    /*border: 6px solid #ffd608;*/
+}
+.eventsWrapper::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+}
+.event{
+    width: 320px;
+    margin:6%;
+    background-color: #001F3F;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.event p{
+    color: #FA5A50;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+.event h3{
+    color: #FA5A50;
+}
+
+.signUpcontainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    color: #fa5a50;
+  }
+  
+  .signUpmain {
+    text-align: center;
+  }
+  
+  .signUpform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .signUpform input {
+    margin: 10px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #fa5a50;
+    border-radius: 5px;
+  }
+  
+  .signUpbutton {
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: #fa5a50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .signUpbutton:hover {
+    background-color: #d1483e;
+  }
+
+  .logIncontainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    color: #fa5a50;
+  }
+  
+  .logInmain {
+    text-align: center;
+  }
+  
+  .logInform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logInform input {
+    margin: 10px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #fa5a50;
+    border-radius: 5px;
+  }
+  
+  .logInbutton {
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: #fa5a50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logInbutton:hover {
+    background-color: #d1483e;
+  }
+
+  
+.event_block{
+    height: 80%; 
+    width: 93%;
+    margin-left: 70px;
+    margin-bottom: 100px;
+    background-color: #001F3F; 
+  
+  }
+  .button_header{
+    width: 100%;
+    height: 100px;
+    border: #FA5A50;
+    background-color: #001F3F;
+  
+  }
+  .main_block{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: #001F3F; 
+    flex-direction: row;
+  }
+  .right_block{
+  
+    width: 20%;
+    height: 100%;
+    background-color:rgba(217, 217, 217, 1);
+    border-radius: 15px;
+  
+  }
+  .button_back{
+    margin-top: 10px;
+    margin-left: 15px;
+    width: 100px;
+    height: 70px;
+    font-size: large;
+    border-radius: 10px;
+    color:rgba(0, 31, 63, 1);
+    background-color: rgba(113, 142, 171, 1)
+  }
+  .hzchto{
+    width: 90%;
+    height: 100%;
+  
+  }
+  .title_header{
+    color:rgba(82, 105, 148, 1);
+    font-size: large;
+    height: 33%;
+    display: flex;
+    align-items: center;
+    margin-top: 1vh; /* Центрирует по вертикали */
+  
+  }
+  
+  .containerEvent{
+    display: flex;
+    height: 85%;
+    width: 100% ;
+    flex-direction: column;
+  }
+  
+  .description{
+    margin-left: 7%;
+    margin-top: 10vh;
+    height:40%;
+    color: #FA5A50;
+    width: 70%;
+    font-size: large;
+    border: #1a9968;
+  
+  }
+  
+  .title{
+    margin-left: 10%;
+    
+  }
+  .contOpisanie{
+    height: 100%;
+    width: 100%;
+  }
+  .contEventImage{
+    margin-bottom: 2%;
+  
+    width: 10%;
+    height: 35%;
+    justify-content: center;
+  }
+  .conteiner_organizator{
+    margin-top: 3vh;
+    height: 10%;
+    display: flex;
+    color: #FA5A50;
+    font-size: large;
+    align-items: center;
+  }
+  
+  .organizator{
+    margin-left: 7%;
+  }
+  .data{
+    margin-left: 68%;
+  }
+  
+  .createFormContainer {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #001f3f;
+    color: #fa5a50;
+  }
+  
+  .createFormMain {
+    text-align: center;
+  }
+  
+  .createForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .createInput {
+    margin: 10px;
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #fa5a50;
+    border-radius: 5px;
+  }
+  
+  .createButton {
+    margin: 10px;
+    padding: 8px 20px;
+    background-color: #fa5a50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .createButton:hover {
+    background-color: #d1483e;
+  }
+  
